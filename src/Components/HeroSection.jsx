@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import Bg_video from "../assets/bg-video.mp4";
 const HeroSection = () => {
   return (
@@ -9,15 +9,19 @@ const HeroSection = () => {
         <h1 className="text-8xl  my-6">
           Leading{" "}
           <span className="typed-wrapper text-8xl text-black">
-            <Typed
-              strings={["Brands", "Business"]}
-              typeSpeed={70}
-              backSpeed={50}
-              backDelay={1200}
-              startDelay={500}
-              showCursor={true}
-              cursorChar="|"
-              loop
+            <TypeAnimation
+              sequence={[
+                "Brands",
+                1000, // pause
+                "Business",
+                1000,
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{ display: "inline-block" }}
+              speed={70}
+              deletionSpeed={50}
             />
           </span>
         </h1>
