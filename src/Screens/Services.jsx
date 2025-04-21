@@ -1,7 +1,7 @@
 import React from "react";
 import RichText from "../Components/RichText/RichText";
 import ContactFrom from "../Components/ContactFrom";
-import Image from "../assets/logo.png";
+import Image from "../assets/Logo.png";
 import BrandCarousel from "../Components/BrandCarousel";
 const Services = () => {
   const services = [

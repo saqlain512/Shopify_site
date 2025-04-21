@@ -12,7 +12,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Brands",
-                1000, // pause
+                1000, 
                 "Business",
                 1000,
               ]}
