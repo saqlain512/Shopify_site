@@ -16,7 +16,7 @@ const logos = [
 
 const BrandCarousel = () => {
   return (
-    <div className="py-10 px-4 bg-[#F7F7F7]">
+    <div className="lg:py-10 py-2 px-4 bg-[#F7F7F7]">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
@@ -45,7 +45,7 @@ const BrandCarousel = () => {
             <img
               src={src}
               alt={`Logo ${idx}`}
-              className="h-16 w-auto object-contain transition-transform duration-300 hover:scale-105"
+              className="sm:h-16  w-auto object-contain transition-transform duration-300 hover:scale-105"
             />
           </SwiperSlide>
         ))}

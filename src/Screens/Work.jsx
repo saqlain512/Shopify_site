@@ -14,7 +14,7 @@ const Work = () => {
           "https://cdn.shopify.com/videos/c/o/v/b655c6f59ea64792b9ada277bbf19504.mp4"
         }
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container py-[86px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container lg:py-[86px] md:py-[50px] sm:py-[30px]">
         {[1, 2, 3].map((item, index) => (
           <ServiceItem key={index} index={index} />
         ))}

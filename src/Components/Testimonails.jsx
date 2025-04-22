@@ -13,22 +13,22 @@ const Testimonails = () => {
   };
 
   return (
-   <div className="bg-black   py-32 overflow-hidden">
-     <div className="container mx-auto   grid grid-cols-5 gap-36">
-      <div className="col-span-2">
-        <h4 className="text-1xl font-normal mb-5 tracking-tight text-white">
+   <div className="bg-black   md:py-32 sm:py-14 py-10  overflow-hidden">
+     <div className="container mx-auto   grid grid-cols-5 md:gap-36 sm:gap-16 gap-10">
+      <div className="md:col-span-2 col-span-5">
+        <h4 className="sm:text-1xl text-sm font-normal mb-5 tracking-tight text-white">
           TRUSTED PARTNERS
         </h4>
-        <h2 className="text-white  text-5xl"> From our clients </h2>
+        <h2 className="text-white  md:text-5xl sm:text-4xl text-3xl"> From our clients </h2>
       </div>
-      <div className="col-span-3 relative">
+      <div className="md:col-span-3 col-span-5 relative">
         <Slider ref={sliderRef} {...settings}>
           {[1, 2, 3, 4, 5].map((_, idx) => (
             <div key={idx}>
               <div className="mx-2">
                 <div>
                   <img src={Image} alt="Logo Pics" className="h-[30px] mb-5" />
-                  <p className="text-white text-2xl max-w-[650px]">
+                  <p className="text-white sm:text-2xl text-1xl max-w-[650px]">
                     “We’ve Increased Our Revenue By 35-40% By Working With
                     100xelevate. They can do things with Shopify that even
                     Shopify thinks are impossible.“

@@ -6,17 +6,33 @@ const SliderCom = ({heading,sliderNum, moreButton}) => {
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: sliderNum,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 2.3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600, 
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+        },
+      },
+    ]
   };
 
   return (
-    <div className="container mx-auto my-10 mt-16 overflow-hidden">
-      <div className="flex justify-between">
-      <h3 className="text-5xl font-normal mb-5 tracking-tight">{heading}</h3>
-    <button>{moreButton}</button>
+    <div className="container mx-auto sm:my-10 my-5 md:mt-16 sm:mt-3 overflow-hidden">
+      <div className="flex justify-between items-center mb-3 flex-wrap gap-y-3">
+      <h3 className="md:text-5xl sm:text-4xl text-3xl font-normal  tracking-tight flex items-center">{heading}</h3>
+       <a href="" className="bg-black text-white rounded-full px-6 py-2 flex items-center">{moreButton}</a>
       </div>
 
       <Slider ref={sliderRef} {...settings}>
@@ -33,7 +49,7 @@ const SliderCom = ({heading,sliderNum, moreButton}) => {
         ))}
       </Slider>
 
-      <div className="flex justify-end gap-4 ">
+      <div className="flex justify-end sm:gap-4 gap-1 sm:mt-0 mt-3 ">
         <button onClick={() => sliderRef.current?.slickPrev()} className="p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +57,7 @@ const SliderCom = ({heading,sliderNum, moreButton}) => {
             height="16"
             viewBox="0 0 20 16"
             fill="none"
-            className="w-8 h-8"
+            className="w-8 sm:h-8  h-4"
           >
             <path
               fill-rule="evenodd"
@@ -59,7 +75,7 @@ const SliderCom = ({heading,sliderNum, moreButton}) => {
             height="16"
             viewBox="0 0 20 16"
             fill="none"
-            className="w-8 h-8"
+            className="w-8 sm:h-8  h-4"
           >
             <path
               fill-rule="evenodd"

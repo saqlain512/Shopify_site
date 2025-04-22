@@ -2,21 +2,21 @@ import React from "react";
 import Image from "../assets/Logo.png";
 const TrustedPatner = () => {
   return (
-    <div className="bg-[#F7F7F7] py-20">
-      <div className="container mx-auto grid grid-cols-3  ">
-        <div>
+    <div className="bg-[#F7F7F7] xl:py-20 lg:py-16 py-12">
+      <div className="container mx-auto grid lg:grid-cols-3  gap-y-9 ">
+        <div className="lg:col-span-1  col-span-2">
           <h5 className="text-sm mb-3">TRUSTED PARTNERS</h5>
-          <h2 className="text-5xl mt-4">
-            Our Tech <br /> Stack
+          <h2 className="xl:text-5xl text-4xl  mt-4">
+            Our Tech <br className="hidden lg:block" /> Stack
           </h2>
         </div>
-        <div className="col-span-2 grid grid-cols-2 gap-y-24">
+        <div className="col-span-2 grid sm:grid-cols-2 sm:gap-y-24 gap-y-16 gap-x-10">
           <div>
             <div className="mb-6">
               <img src={Image} alt="company logo" className="h-6 " />
             </div>
             <h6 className="text-sm text-black font-bold">E-COMMERCE</h6>
-            <p className="text-sm text-gray-500 mt-4  max-w-[300px]">
+            <p className="text-sm text-gray-500 mt-4  lg:max-w-[300px]">
               100xelevate works closely with Shopify Plus to deliver
               best-in-class commerce experiences for high-growth brands.
             </p>
@@ -45,7 +45,7 @@ const TrustedPatner = () => {
               <img src={Image} alt="company logo" className="h-6 " />
             </div>
             <h6 className="text-sm text-black font-bold">E-COMMERCE</h6>
-            <p className="text-sm text-gray-500 mt-4  max-w-[300px]">
+            <p className="text-sm text-gray-500 mt-4  lg:max-w-[300px]">
               100xelevate works closely with Shopify Plus to deliver
               best-in-class commerce experiences for high-growth brands.
             </p>
@@ -74,7 +74,7 @@ const TrustedPatner = () => {
               <img src={Image} alt="company logo" className="h-6 " />
             </div>
             <h6 className="text-sm text-black font-bold">E-COMMERCE</h6>
-            <p className="text-sm text-gray-500 mt-4  max-w-[300px]">
+            <p className="text-sm text-gray-500 mt-4  lg:max-w-[300px]">
               100xelevate works closely with Shopify Plus to deliver
               best-in-class commerce experiences for high-growth brands.
             </p>
@@ -103,7 +103,7 @@ const TrustedPatner = () => {
               <img src={Image} alt="company logo" className="h-6 " />
             </div>
             <h6 className="text-sm text-black font-bold">E-COMMERCE</h6>
-            <p className="text-sm text-gray-500 mt-4  max-w-[300px]">
+            <p className="text-sm text-gray-500 mt-4  lg:max-w-[300px]">
               100xelevate works closely with Shopify Plus to deliver
               best-in-class commerce experiences for high-growth brands.
             </p>

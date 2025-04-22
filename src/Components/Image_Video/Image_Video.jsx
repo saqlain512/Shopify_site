@@ -3,9 +3,9 @@ import React from "react";
 const Image_Video = ({ video }) => {
   return (
     <div className="px-3">
-      <div className="relative  h-screen overflow-hidden">
+      <div className="relative  sm:h-screen h-[80vh] overflow-hidden">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover px-2"
+          className="absolute top-0 left-0 w-full h-full object-cover sm:px-2 px-0"
           autoPlay
           loop
           muted

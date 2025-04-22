@@ -3,10 +3,10 @@ import React from "react";
 const RichText = () => {
   return (
     <div>
-      <div className="container py-16">
-        <h5>Services</h5>
-        <h2 className="text-[#A3A3A3] text-[48px]">
-          <span className="text-black font-medium" >Accelerating business growth</span> 
+      <div className="container lg:py-16 md:py-12 py-9">
+        <h5 className="lg:mb-0 mb-4">Services</h5>
+        <h2 className="text-[#A3A3A3] md:text-[48px] sm:text-[32px] text-[25px] lg-leading-tight leading-snug">
+          <span className="text-black font-medium "  >Accelerating business growth</span> {' '}
           through design, Shopify Plus e-commerce development &amp;
           optimization.
         </h2>

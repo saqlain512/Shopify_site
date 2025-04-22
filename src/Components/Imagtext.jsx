@@ -2,8 +2,8 @@ import React from "react";
 import image from "../assets/ImageText/ImageText.png";
 const Imagtext = () => {
   return (
-    <div className="container mx-auto py-16 px-4">
-      <div className="flex flex-col md:flex-row items-center gap-20">
+    <div className="container mx-auto md:py-16 sm:py-10 py-4 px-4">
+      <div className="flex flex-col md:flex-row items-center md:gap-20 sm:gap-10 gap-8">
         <div className="md:w-2/5 w-full">
           <img
             src={image}
@@ -17,10 +17,10 @@ const Imagtext = () => {
         </div>
 
         <div className="md:w-1/2 w-full text-black">
-          <h5 className="text-sm font-normal mb-10">
+          <h5 className="text-sm font-normal md:mb-10 sm:mb-6 mb-6">
             WHO ARE WE
           </h5>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-4 text-black mb-10">
+          <h2 className=" md:text-5xl sm:text-4xl text-3xl font-semibold text-black sm:mb-10 mb-5">
             High-quality design that makes your brand impossible to ignore.
           </h2>
           <p className="mb-2 text-[14px] text-gray-500">

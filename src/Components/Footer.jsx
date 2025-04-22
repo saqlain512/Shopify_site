@@ -1,18 +1,22 @@
 import React from "react";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMenuOpen(false);
+  };
   return (
     <footer className="bg-black ">
-      <div className="container mx-auto py-14 ">
-        <div className="grid grid-cols-4 gap-4">
-          <div className="col-span-2 ">
-            <p className="text-2xl text-white mb-14">
+      <div className="container mx-auto sm:py-14 py-7 ">
+        <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2  gap-4">
+          <div className="sm:col-span-2 col-span-3">
+            <p className="sm:text-2xl text-1xl text-white sm:mb-14 mb-4">
               Ready to make a digital impact?
-              <br />
+              <br className="hidden sm:block" />
               Let’s create something unforgettable.
             </p>
-            <span className="border-b text-white border-white pb-3 text-nowrap flex w-fit gap-3 text-2xl items-center">
-              hello@100xelevate.com{" "}
+            <span className="border-b text-white border-white pb-3 text-nowrap flex w-fit gap-3 sm:text-2xl text-1xl items-center   sm:mr-auto sm:mb-0 mb-3">
+              hello@100xelevate.com
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -30,38 +34,38 @@ const Footer = () => {
             </span>
           </div>
           <div className="text-white">
-            <h4 className="text-sm mb-6">(Navigaton)</h4>
+            <h4 className="text-sm sm:mb-6 mb-4">(Navigaton)</h4>
             <div>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Home
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Work
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Services
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 About
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Insights
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 ROI Calculator
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Instant Checkout
               </a>
             </div>
           </div>
           <div className="text-white">
-            <h4 className="text-sm mb-6">(Legal)</h4>
+            <h4 className="text-sm sm:mb-6 mb-4">(Legal)</h4>
             <div>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Privacy Policy
               </a>
-              <a href="#" className="text-white block text-2xl">
+              <a href="#" className="text-white block  sm:text-2xl text-1xl">
                 Terms & Conditions
               </a>
             </div>
@@ -69,24 +73,26 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-white border-t ">
-        <div className="container grid grid-cols-2 py-4">
+        <div className="container flex items-center justify-between  gap-6 py-4">
           <div className="flex items-center ">
-            <h5 className="text-sm mb-3">All rights reserved 100xelevate 2025</h5>
+            <h5 className="text-sm ">All rights reserved 100xelevate 2025</h5>
           </div>
-          <div className="flex items-center justify-end">
-            <h5 className="text-sm mr-3">Back to top</h5>
+          <div className="flex items-center justify-end"  onClick={scrollToTop}>
+            <h5 className="sm:text-sm text-xs  mr-3  whitespace-nowrap">Back to top</h5>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="20"
               viewBox="0 0 16 20"
               fill="none"
+              className="sm:w-4 w-3"
             >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M7.47 0.469828C7.61063 0.329378 7.80125 0.250488 8 0.250488C8.19875 0.250488 8.38938 0.329378 8.53 0.469828L15.53 7.45683C15.6017 7.52598 15.6588 7.60871 15.6982 7.7002C15.7375 7.79168 15.7583 7.89009 15.7592 7.98967C15.7601 8.08925 15.7412 8.18802 15.7035 8.28021C15.6658 8.3724 15.6102 8.45616 15.5398 8.52662C15.4694 8.59707 15.3857 8.6528 15.2935 8.69055C15.2014 8.72831 15.1026 8.74733 15.0031 8.74651C14.9035 8.74569 14.805 8.72505 14.7135 8.68579C14.622 8.64652 14.5392 8.58943 14.47 8.51783L8.751 2.80983L8.762 18.9998C8.76227 19.1987 8.6835 19.3896 8.54304 19.5305C8.40257 19.6713 8.21191 19.7506 8.013 19.7508C7.81409 19.7511 7.62322 19.6723 7.48238 19.5319C7.34154 19.3914 7.26227 19.2007 7.262 19.0018L7.252 2.80783L1.53 8.51883C1.46078 8.59043 1.378 8.64752 1.28648 8.68679C1.19495 8.72605 1.09653 8.74669 0.996945 8.74751C0.89736 8.74833 0.79861 8.72931 0.706456 8.69155C0.614302 8.6538 0.53059 8.59807 0.460204 8.52762C0.389818 8.45716 0.334167 8.3734 0.2965 8.28121C0.258833 8.18902 0.239903 8.09025 0.240815 7.99067C0.241727 7.89108 0.262463 7.79268 0.301812 7.7012C0.341161 7.60971 0.398336 7.52698 0.470001 7.45783L7.47 0.469828Z"
                 fill="white"
+                
               ></path>
             </svg>
           </div>
